@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(96, 126, 151);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        .container {
+            border: 1px solid rgb(32, 32, 104);
+            height: 400px;
+            width: 303px;
+            margin: auto;
+            background-color: rgb(15, 15, 15);
+            overflow: hidden;
+            display: inline-flexbox;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            height: 82%;
+            margin: 0 auto 0;
+        }
+
+        table tr td {
+            /* border: 2px solid; */
+            /* border-collapse: collapse; */
+            font-size: 1.5rem;
+            height: auto;
+            width: 25%;
+            text-align: center;
+            background-color: grey;
+            color: aliceblue;
+            font-family: 'Lobster', cursive;
+        }
+
+        textarea {
+            /* width: 100%; */
+            text-align: left;
+
+            overflow: hidden;
+            background-color: rgb(15, 15, 15);
+            opacity: 0.5;
+            margin: 2px 0 0 0;
+            border: 1px solid rgb(15, 15, 15);
+            color: aliceblue;
+            font-weight: 200;
+        }
+
+        td:hover {
+
+            color: black;
+            box-shadow: 2px 2px 2px 1px rgba(172, 168, 168, 0.2);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+
+    <div class="container">
+        <textarea name="text" id="" cols="38" rows="4"></textarea>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>+</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>clr</td>
+                <td>0</td>
+                <td>=</td>
+                <td>/</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
